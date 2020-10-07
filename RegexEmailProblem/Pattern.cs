@@ -7,7 +7,7 @@ namespace RegexEmailProblem
 {
     class Pattern
     {
-        string Regex_Email = "^[a-z0-9A-Z]+[@][a-zA-Z]";
+        string Regex_Email = "^[a-z0-9A-Z]+[@][a-zA-Z]+$";
         public void validateEmail(string email)
         {
             if (Regex.IsMatch(email, Regex_Email))
